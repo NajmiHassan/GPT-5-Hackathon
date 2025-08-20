@@ -36,3 +36,4 @@ Prompt engineering: specific to each use case.
 
 
 Other suggested tools: loveable, cursor ai
+<img width="1892" height="847" alt="image" src="https://github.com/user-attachments/assets/2af1b314-0475-4f47-af11-d23af2517d96" />
