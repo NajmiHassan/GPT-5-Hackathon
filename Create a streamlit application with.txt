@@ -1,0 +1,38 @@
+Create a streamlit application with multiple pages
+Idea:
+
+Students in Pakistan usually face challenges in learning English language. However, the invention of AI has solved this problem, but digital devices bend the focus on students and instead of learning, they waste time in exploring social media application. Similar is the case with LLMs, instead of utilizing it for educational purposes, they asks irrelevant questions and waste their time. That's why it is necessary to develop an application for students that utilizes AI with a control on it. 
+Additionally, this application can be installed in the schools in remote areas where few people possess digital devices. The application should be simple with no CSS or fancy things. Just use streamlit functions to make it attractive.
+
+Target Audience:
+Students of 9-12 grades
+
+Application Structure:
+app.py
+pages
+	learning.py
+	practice.py
+	essay writing.py
+
+Let's discuss each page.
+1. app.py
+This is the home page. It will provide an overview to the user what the application can do. It should be attractive to students.
+
+2. learning.py
+This single page will be doing much work. It will ask the user what he wants to learn [Tenses, Active Passive and Direct & Indirect]. Upon selection it will ask the appropriate category like
+- tenses: past simple, past simple, and so on.... (include all tenses types)
+- active & passive: asks whether the user learn active to passive conversion or passive to active passive conversion and then asks the appropriate tense type like present simple 
+- direct & indirect: asks whether the user want to learn direct to indirect conversion or vice versa and asks the appropriate tense type.
+Everything will be stores inside a variable or session state(preferred)
+After asking the detail, everything will be asked to a function which will create a prompt and invoke a LLM. the function will return output in markdown format and it will be displayed on the desktop.
+
+3. practice.py
+Much work will be doing on this page. Students will practice (Tenses, Active Passive and Direct & Indirect).
+- Tenses: Here students will be asked which tense do they want to practice (e.g past simple) and then the no. of example (max: 15), then the user selection will be send to a function which will return Urdu examples of that tense in json format. Each example will be shown to the user with an input box. and the user will enter the English of that Urdu sentence. Upon entering the done button, all user inputs will be added to the json file and will be send to the function which will return two variables. One variable will contain the evaluation of user answers in the json format which will be shown to the user and the other variabls will contain the detailed report of user answer which will be available to download.
+- Active & Passive and Direct & Indirect will also follow the same structure with one modification. the llm will send the examples in English instead of Urdu to practice.
+
+
+I will share other parts soon.
+
+
+Provide me content to learn "Active to Passive Conversion" in "Past Continuous" Tense. Your output should contain introduction, structure building, change of pronouns and examples of conversion (simple sentences, negation sentences and question sentences). Your output should be easy to understand for Pakistani student of 9-12 grade. However, no need to mention in the response that it is for Pakistani student. Also include Urdu translation of example. 
