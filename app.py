@@ -122,8 +122,9 @@ elif nav == "Active/Passive Voice Practice":
 elif nav == "Learning Module":
     render_learning_module()
 
-# =========================
-# ---- FOOTER -------------
-# =========================
+# ========================
+# ---- FOOTER ------------
+# ========================
 st.markdown("---")
 st.caption("Frontend ready. Connect GPT‑5 API calls where info placeholders are shown.")
+
